@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top:-60px;
+}
+
+.wiki-search-header {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d5cdcd;
+  padding: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.wiki-logo {
+  margin-bottom: 20px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-input {
+  font-size: 18px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d5cdcd;
+  border-radius: 3px;
+  padding: 10px;
+  width: calc(100% - 24px); /* Adjust width to fit within borders */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border: 0.25rem solid #d5cdcd;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.search-results {
+  width: 100%;
+  max-width: 800px;
+  padding-left: 20px;
+}
+
+.result-item {
+  margin-bottom: 20px;
+}
+
+.result-title {
+  font-size: 22px;
+}
+
+.link-description {
+  color: #444444;
+  font-size: 15px;
+}
+
+.result-url {
+  color: #006621;
+  text-decoration: none;
+}
